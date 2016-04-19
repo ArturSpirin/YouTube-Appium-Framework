@@ -1,0 +1,15 @@
+group 'demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.appium:java-client:3.4.0'
+    compile 'junit:junit:4.12'
+}
