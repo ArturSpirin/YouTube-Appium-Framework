@@ -15,8 +15,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.appium:java-client:3.4.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.2.12.v20150709" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.2.12.v20150709" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:2.52.0" level="project" />
     <orderEntry type="library" name="Gradle: cglib:cglib:3.1" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.2.12.v20150709" level="project" />
@@ -63,5 +63,6 @@
     <orderEntry type="library" name="Gradle: net.sourceforge.nekohtml:nekohtml:1.9.22" level="project" />
     <orderEntry type="library" name="Gradle: net.sourceforge.cssparser:cssparser:0.9.16" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-client:9.2.12.v20150709" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>

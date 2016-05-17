@@ -12,7 +12,7 @@ public class ADB {
 
     private String ID;
 
-    //public ADB(String deviceID){ID = deviceID;}
+    public ADB(String deviceID){ID = deviceID;}
 
     public static String command(String command){
         if(command.startsWith("adb")) command = command.replace("adb ", ServerManager.getAndroidHome()+"/platform-tools/adb ");
@@ -161,16 +161,5 @@ public class ADB {
 
     public void stopLocat(Object PID){
         command("adb -s "+ID+" shell kill "+PID);
-    }
-
-    @Test
-    public void test(){
-        ID = "00a0493f4f06c6d4";
-        System.out.println("Processes Prior to starting new logcat: "+getLogcatProcesses());
-        Object PID = startLogcat("1", null);
-        System.out.println("Started logcat on PID: "+PID);
-        System.out.println("Processes after starting new logcat: "+getLogcatProcesses());
-        stopLocat(PID);
-        System.out.println("Processes after stopping new logcat: "+getLogcatProcesses());
     }
 }
