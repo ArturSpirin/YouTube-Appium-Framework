@@ -14,6 +14,7 @@ public class Runner {
 //org.zwanoo.android.speedtest
 //com.ookla.speedtest.softfacade.MainActivity
     public static void main(String[] args) throws MalformedURLException {
+
         MyLogger.log.setLevel(Level.INFO);
         try{
             DriverManager.createDriver();
