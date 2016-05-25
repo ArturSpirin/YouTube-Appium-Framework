@@ -14,7 +14,7 @@ public class UiObject {
 
     UiObject(String locator){
         this.locator = locator;
-        System.out.println(this.locator);
+        MyLogger.log.debug("Created new UiObject: "+this.locator);
     }
 
     private boolean isXpath(){
