@@ -1,12 +1,17 @@
 package api.apps.speedtest;
 
 import api.android.Android;
+import api.apps.speedtest.home.Home;
+import api.apps.speedtest.menu.Menu;
 import api.interfaces.Application;
 
 /**
  * Created by Artur on 5/25/2016.
  */
 public class Speedtest implements Application {
+
+    public Menu menu = new Menu();
+    public Home home = new Home();
 
     @Override
     public void forceStop() {
