@@ -100,5 +100,10 @@ public class TestInfo {
         return VERSION;
     }
 
+    public static void printResults(){
+        MyLogger.log.info("Test ID: "+id());
+        MyLogger.log.info("Test Name: "+name());
+        MyLogger.log.info("Test Suite: "+suite());
+    }
 
 }

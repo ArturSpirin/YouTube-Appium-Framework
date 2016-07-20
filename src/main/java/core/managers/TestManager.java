@@ -1,6 +1,7 @@
 package core.managers;
 
 import api.android.Android;
+import core.MyLogger;
 import core.Retry;
 import core.TestInfo;
 import org.junit.Before;
@@ -29,12 +30,14 @@ public class TestManager {
     public TestRule listen = new TestWatcher() {
         @Override
         public void failed(Throwable t, Description description){
-
+            MyLogger.log.info("Test Failed:");
+            TestInfo.printResults();
         }
 
         @Override
         public void succeeded(Description description){
-
+            MyLogger.log.info("Test Passed:");
+            TestInfo.printResults();
         }
     };
 }
