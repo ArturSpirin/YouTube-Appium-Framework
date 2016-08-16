@@ -134,7 +134,7 @@ public class ADB {
         return processes;
     }
 
-    public Object startLogcat(String logID, String grep){
+    public Object startLogcat(final String logID, final String grep){
         ArrayList pidBefore = getLogcatProcesses();
 
         Thread logcat = new Thread(new Runnable() {

@@ -1,9 +1,20 @@
 group 'demo'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 apply plugin: 'java'
 
 sourceCompatibility = 1.5
+
+task buildJar(type: Jar){
+    manifest{
+        attributes 'Implementation-Title': 'Appium Framework',
+                   'Implementation-Version': version,
+                   'Main-Class': 'Runner'
+    }
+    baseName = project.name + "-FM"
+    from {configurations.compile.collect {it.isDirectory() ? it:zipTree(it)}}
+    with jar
+}
 
 repositories {
     mavenCentral()
